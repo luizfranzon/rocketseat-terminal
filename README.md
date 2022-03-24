@@ -5,8 +5,12 @@
 sudo apt install curl zsh git
 ```
 
-### Install Dracula Theme:
-https://draculatheme.com/
+### Install Dracula Theme or Aura Theme:
+Dracula: https://draculatheme.com/
+Aura: 
+```console
+hyper i hyper-aura-theme
+```
 
 ### Install FiraCode Font:
 https://github.com/tonsky/FiraCode/releases
