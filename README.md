@@ -1,22 +1,22 @@
 # Rocketseat Terminal
 
-sudo apt install curl
-sudo apt install zsh
-sudo apt install git
+sudo apt install curl <br>
+sudo apt install zsh  <br>
+sudo apt install git  <br>
 
 
 Install Dracula Theme:
-https://draculatheme.com/
+https://draculatheme.com/ <br>
 
 Install FiraCode Font:
-https://github.com/tonsky/FiraCode/releases
+https://github.com/tonsky/FiraCode/releases <br>
 
-Instalando Spaceship:
+Instalando Spaceship: <br>
 
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
-Mude dentro de ~/.zshrc o theme para:
+Mude dentro de ~/.zshrc o theme para:<br>
 ZSH_THEME="spaceship"
 
 Adicione no final do ~/.zshrc :
