@@ -6,7 +6,7 @@ sudo apt install curl zsh git
 ```
 
 ### Install Dracula Theme or Aura Theme:
-Dracula: https://draculatheme.com/
+Dracula: https://draculatheme.com/ <br>
 Aura: 
 ```console
 hyper i hyper-aura-theme
