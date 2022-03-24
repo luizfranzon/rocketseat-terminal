@@ -1,4 +1,5 @@
 # Rocketseat Terminal
+<a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
 ```console
 sudo apt install curl zsh git
