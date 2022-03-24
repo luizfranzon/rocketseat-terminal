@@ -1,22 +1,30 @@
 # Rocketseat Terminal
 
-sudo apt install curl zsh git <br>
+```console
+sudo apt install curl zsh git
+```
 
-Install Dracula Theme:
-https://draculatheme.com/ <br>
+### Install Dracula Theme:
+https://draculatheme.com/
 
-Install FiraCode Font:
-https://github.com/tonsky/FiraCode/releases <br>
+### Install FiraCode Font:
+https://github.com/tonsky/FiraCode/releases
 
-Instalando Spaceship: <br>
-
+### Instalando Spaceship:
+```console
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+```
+```console
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+```
 
-Mude dentro de ~/.zshrc o theme para:<br>
+### Mude dentro de ~/.zshrc o theme para:
+```console
 ZSH_THEME="spaceship"
+```
 
-Adicione no final do ~/.zshrc :
+#### Adicione no final do ~/.zshrc
+```console
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
@@ -34,12 +42,16 @@ SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
+```
 
-Instalando Plugins ZSH:
-
+### Instalando Plugins ZSH:
+```console
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh)"
+```
 
-Adicione no final do ~/.zshrc :
+#### Adicione no final do ~/.zshrc :
+```console
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
+```
