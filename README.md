@@ -1,9 +1,6 @@
 # Rocketseat Terminal
 
-sudo apt install curl <br>
-sudo apt install zsh  <br>
-sudo apt install git  <br>
-
+sudo apt install curl zsh git <br>
 
 Install Dracula Theme:
 https://draculatheme.com/ <br>
