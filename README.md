@@ -1,34 +1,44 @@
 # Rocketseat Terminal
+
 <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
+
+### Pacotes necessários:
 ```console
 sudo apt install curl zsh git
 ```
 
 ### Install Dracula Theme or Aura Theme:
+
 Dracula: https://draculatheme.com/ <br>
-Aura: 
+
+#### Aura-theme:
 ```console
 hyper i hyper-aura-theme
 ```
 
 ### Install FiraCode Font:
+
 https://github.com/tonsky/FiraCode/releases
 
 ### Instalando Spaceship:
+
 ```console
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ```
+
 ```console
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
 ### Mude dentro de ~/.zshrc o theme para:
+
 ```console
 ZSH_THEME="spaceship"
 ```
 
 #### Adicione no final do ~/.zshrc
+
 ```console
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
@@ -50,11 +60,13 @@ SPACESHIP_CHAR_SUFFIX=" "
 ```
 
 ### Instalando Plugins ZSH:
+
 ```console
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh)"
 ```
 
 #### Adicione no final do ~/.zshrc :
+
 ```console
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
