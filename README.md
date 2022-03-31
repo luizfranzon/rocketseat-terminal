@@ -3,7 +3,7 @@
 <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
 
-### Pacotes necessários:
+### Necessary packages:
 ```console
 sudo apt install curl zsh git
 ```
@@ -26,7 +26,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 https://github.com/tonsky/FiraCode/releases
 
-### Instalando Spaceship:
+### Installing Spaceship:
 
 ```console
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
@@ -36,13 +36,13 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
-### Mude dentro de ~/.zshrc o theme para:
+### Edit in ~/.zshrc the theme for:
 
 ```console
 ZSH_THEME="spaceship"
 ```
 
-#### Adicione no final do ~/.zshrc
+#### Add in ~/.zshrc
 
 ```console
 SPACESHIP_PROMPT_ORDER=(
@@ -65,16 +65,22 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 ```
 
-### Instalando Plugins ZSH:
+### Installing ZSH plugins:
 
 ```console
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh)"
 ```
 
-#### Adicione no final do ~/.zshrc :
+#### Add in ~/.zshrc :
 
 ```console
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
+```
+
+### Edit in ~/.zshrc the plugins for:
+
+```console
+plugins=(git nvm sudo web-search copypath history)
 ```
