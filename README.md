@@ -17,6 +17,11 @@ Dracula: https://draculatheme.com/ <br>
 hyper i hyper-aura-theme
 ```
 
+### Install Oh My Zsh:
+```console
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ### Install FiraCode Font:
 
 https://github.com/tonsky/FiraCode/releases
