@@ -1,4 +1,4 @@
-# Rocketseat Terminal
+# Rocketseat Terminal 
 
 <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
@@ -83,4 +83,10 @@ zinit light zsh-users/zsh-completions
 
 ```console
 plugins=(git nvm sudo web-search copypath history)
+```
+
+### Installing nvm:
+```console
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
