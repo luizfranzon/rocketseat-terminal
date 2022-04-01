@@ -1,5 +1,7 @@
 # Rocketseat Terminal 
 
+<p align="center" > <img src="./images/terminal.png"> </p>
+
 <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
 
