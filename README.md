@@ -99,7 +99,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-### WSL remove background highlight in directories
+### To remove background highlight in directories WSL2
 #### Add in ~/.zshrc
 ```console
 LS_COLORS+=':ow=01;33'
