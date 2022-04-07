@@ -1,61 +1,67 @@
-# - Rocketseat Terminal <img align="center" width="40" src="./images/favicon.ico">
-
-<p align="center" > <img src="./images/terminal1.png"> </p>
-
-<a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
+# - Rocketseat Terminal Customization
+<img src="./images/terminal1.png">
 
 
-### Necessary packages:
-```console
-sudo apt install curl zsh git
-```
+<hr>
+<img align="right" width="180" src="./images/favicon.ico">
+Minhas personalizações do terminal <a href="https://hyper.is/">Hyper</a>, editadas do <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">artigo</a> criado pela <a href="https://www.rocketseat.com.br/">Rocketseat</a>.
 
-### Install Omni-theme:
+O Hyper é um terminal de código aberto multiplataforma, com o intuito de criar uma experiência flexível e bonita para o usuário, possibilitando a utilização de plugins e temas.
+
+**Lista de temas e plugins:** <a href="https://github.com/bnb/awesome-hyper">*awesome-hyper*</a>
+<br>
+
+<hr>
+
+## 1- Instalando o Omni-theme
 ```console
 hyper install hyper-omni-theme
 ```
 
-### Install Hyper borders: 
-#### change in .hyper.js config file:
+## 2- Instalando o Hyper borders e scrolbar
+
+Edite no arquivo **.hyper.js** os plugins, e adicione o **hyperBoarder** dentro de config:
+
 ```javascript
-config: {
-    ...
+module.exports = {
+    config: {
+        ...
         hyperBorder: {
             borderColors: ['#6514f5','#33d0b9', '#6514f5'],
             borderWidth: '6px'
-        },
-    ...
-}
-
-plugins: ['hyper-omni-theme', 'hyperborder'],
+        }
+        ...
+```
+```javascript
+plugins: ['hyper-omni-theme', 'hyperborder', 'hyper-dark-scrollbar'],
 ```
 
-### Install Oh My Zsh:
+## 3- Instalando Oh My Zsh
+
+Cole o comando no console e siga com a instalação
 ```console
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Install "Fira Code" Font:
+## 4- Instalando a fonte "Fira Code" 
+Baixe o <a href="https://github.com/tonsky/FiraCode/releases">Fira_Code_v*.zip</a> e instale a fontes. <br>
 
-https://github.com/tonsky/FiraCode/releases
+## 5- Instalando o Spaceship
 
-Apply Fira Code in your terminal:
-```javascript
-fontFamily: '"Fira Code",
-```
-
-### Installing Spaceship:
-
+**5.1** Clone o repositório do tema.
 ```console
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ```
-### Edit in ~/.zshrc the theme for:
+**5.2** Faça um link do simbólico do tema na pasta do zsh.
+```console
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+```
 
+**5.3** Agora abra o ~/.zshrc com um editor de sua preferencia e edite o tema para:
 ```console
 ZSH_THEME="spaceship"
 ```
-
-#### Add in ~/.zshrc
+**5.4** Neste mesmo arquivo, adicione as opções para desabilitar algumas das funções que consomem desempenho e fazer outras customizações.
 
 ```console
 SPACESHIP_PROMPT_ORDER=(
@@ -76,41 +82,45 @@ SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SUFFIX=" "
 ```
+Se quiser fazer a suas próprias customizações, existe a <a href="https://spaceship-prompt.sh/options/">documentação</a> do **Spaceship** para consulta.
 
-### Installing ZSH plugins:
+**5.5** Instalando plugins do Zsh <br>
+Procure no ~/.zshrc a parte dos plugins e adicione os seguintes:
+```console
+plugins=(git nvm sudo web-search copypath history)
+```
+
+**5.6** Reinicie o terminal para ver a mudança.
+
+## 6- Instalando plugins Zinit
+Antes de instalar os plugins, precisamos do <a href="https://z-shell.pages.dev/">ZI</a>, que facilita a instalação dos mesmos.
 
 ```console
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/z-shell/zi-src/main/lib/sh/install.sh)"
 ```
 
-#### Add in ~/.zshrc :
+Agora adicionamos os plugins nas ultimas linhas do nosso arquivo **~/.zshrc**:
 
 ```console
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 ```
-
-### Edit in ~/.zshrc the plugins for:
-
-```console
-plugins=(git nvm sudo web-search copypath history)
-```
-
-### Installing nvm:
+## 7- Instalando Node Version Manager
+Execute os seguintes comandos.
 ```console
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
-#### Add in ~/.zshrc :
-
+Depois, adicione no final do seu arquivo **~/.zshrc**:
 ```console
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-### To remove background highlight in directories WSL2
-Add in ~/.zshrc
+## Opcional
+Caso esteja utilizando o WSL, alguns diretórios podem aparecer com um background nas letras, dificultando a a leitura.
+Para conserta isso, adicione no final de seu arquivo **~/.zshrc**:
 ```console
 LS_COLORS+=':ow=01;33'
 ```

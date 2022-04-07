@@ -24,7 +24,7 @@ module.exports = {
         // letter spacing as a relative unit
         letterSpacing: 0,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-        cursorColor: 'rgba(248,28,229,0.8)',
+        cursorColor: 'rgba(140, 0, 255, 0.479)',
         // terminal text color under BLOCK cursor
         cursorAccentColor: '#000',
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
@@ -37,7 +37,7 @@ module.exports = {
         // opacity is only supported on macOS
         backgroundColor: '#000',
         // terminal selection color
-        selectionColor: 'rgba(248,28,229,0.3)',
+        selectionColor: 'rgba(140, 0, 255, 0.479)',
         // border color (window, tabs)
         borderColor: '#333',
         // custom CSS to embed in the main window
@@ -142,7 +142,11 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyper-omni-theme', 'hyperborder'],
+    plugins: [
+    'hyper-omni-theme', 
+    'hyperborder',
+    'hyper-dark-scrollbar',
+    ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
