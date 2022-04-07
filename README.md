@@ -39,6 +39,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 https://github.com/tonsky/FiraCode/releases
 
+Apply Fira Code in your terminal:
+```javascript
+fontFamily: '"Fira Code",
+```
+
 ### Installing Spaceship:
 
 ```console
