@@ -132,7 +132,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 <br>
 
 ## Opcional
-Caso esteja utilizando o WSL, alguns diretórios podem aparecer com um background nas letras, dificultando a a leitura.
+Caso esteja utilizando o WSL, alguns diretórios podem aparecer com um background nas letras, dificultando a leitura.
 Para conserta isso, adicione no final de seu arquivo **~/.zshrc**:
 ```console
 LS_COLORS+=':ow=01;33'
