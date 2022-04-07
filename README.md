@@ -51,7 +51,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 <br>
 
 ## 4- Instalando a fonte "Fira Code" 
-Baixe o <a href="https://github.com/tonsky/FiraCode/releases">Fira_Code_v*.zip</a> e instale a fontes. <br>
+Baixe o <a href="https://github.com/tonsky/FiraCode/releases">Fira_Code_v*.zip</a> e instale as fontes. <br>
 <br>
 
 ## 5- Instalando o Spaceship
