@@ -1,6 +1,6 @@
 # - Rocketseat Terminal <img align="center" width="40" src="./images/favicon.ico">
 
-<p align="center" > <img src="./images/terminal.png"> </p>
+<p align="center" > <img src="./images/terminal1.png"> </p>
 
 <a href="https://blog.rocketseat.com.br/terminal-com-oh-my-zsh-spaceship-dracula-e-mais/">Link do post</a>
 
