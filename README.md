@@ -26,6 +26,8 @@ config: {
         },
     ...
 }
+
+plugins: ['hyper-omni-theme', 'hyperborder'],
 ```
 
 ### Install Oh My Zsh:
