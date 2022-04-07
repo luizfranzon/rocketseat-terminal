@@ -1,4 +1,4 @@
-# Rocketseat Terminal 
+# - Rocketseat Terminal <img align="center" width="40" src="./images/favicon.ico">
 
 <p align="center" > <img src="./images/terminal.png"> </p>
 
@@ -10,13 +10,22 @@
 sudo apt install curl zsh git
 ```
 
-### Install Dracula Theme or Aura Theme:
-
-Dracula: https://draculatheme.com/ <br>
-
-#### Aura-theme:
+### Install Omni-theme:
 ```console
-hyper i hyper-aura-theme
+hyper install hyper-omni-theme
+```
+
+### Install Hyper borders: 
+#### change in .hyper.js config file:
+```javascript
+config: {
+    ...
+        hyperBorder: {
+            borderColors: ['#6514f5','#33d0b9', '#6514f5'],
+            borderWidth: '6px'
+        },
+    ...
+}
 ```
 
 ### Install Oh My Zsh:
@@ -24,20 +33,15 @@ hyper i hyper-aura-theme
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Install FiraCode Font:
+### Install "Fira Code" Font:
 
 https://github.com/tonsky/FiraCode/releases
 
 ### Installing Spaceship:
 
 ```console
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
-
-```console
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-```
-
 ### Edit in ~/.zshrc the theme for:
 
 ```console
@@ -100,7 +104,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 ```
 
 ### To remove background highlight in directories WSL2
-#### Add in ~/.zshrc
+Add in ~/.zshrc
 ```console
 LS_COLORS+=':ow=01;33'
 ```
