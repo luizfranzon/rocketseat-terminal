@@ -60,7 +60,7 @@ Baixe o <a href="https://github.com/tonsky/FiraCode/releases">Fira_Code_v*.zip</
 ```console
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ```
-**5.2** Faça um link do simbólico do tema na pasta do zsh.
+**5.2** Faça um link simbólico do tema na pasta do zsh.
 ```console
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ```
