@@ -43,6 +43,10 @@ plugins: ['hyper-omni-theme', 'hyperborder', 'hyper-dark-scrollbar'],
 <br>
 
 ## 3- Instalando Oh My Zsh
+Primeiro, instale o Zsh
+```console
+sudo apt install zsh
+```
 
 Cole o comando no console e siga com a instalação
 ```console
