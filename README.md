@@ -66,7 +66,7 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/theme
 ```
 **5.2** Faça um link simbólico do tema na pasta do zsh.
 ```console
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
 **5.3** Agora abra o ~/.zshrc com um editor de sua preferencia e edite o tema para:
